@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy English - Изучайте английский легко</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-language"></i>
+                <h1>Easy English</h1>
+            </div>
+            <p>Изучайте английский язык легко и бесплатно</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#home" class="active"><i class="fas fa-home"></i> Главная</a></li>
+                <li><a href="#lessons"><i class="fas fa-book"></i> Уроки</a></li>
+                <li><a href="#vocabulary"><i class="fas fa-book-open"></i> Словарь</a></li>
+                <li><a href="#tips"><i class="fas fa-lightbulb"></i> Советы</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section id="home">
+            <h2>Добро пожаловать на Easy English!</h2>
+            <div class="welcome-content">
+                <div class="welcome-text">
+                    <p>Наш сайт поможет вам изучать английский язык с нуля или улучшить свои существующие знания. Мы предлагаем:</p>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Понятные уроки для разных уровней</li>
+                        <li><i class="fas fa-check-circle"></i> Тематический словарь с произношением</li>
+                        <li><i class="fas fa-check-circle"></i> Полезные советы по изучению языка</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="start-learning">
+                <a href="#lessons" class="button">Начать обучение <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </section>
+
+        <section id="lessons">
+            <h2><i class="fas fa-book"></i> Уроки</h2>
+            <div class="level-tabs">
+                <input type="radio" id="beginner" name="level" checked>
+                <label for="beginner">Начинающий</label>
+                
+                <input type="radio" id="intermediate" name="level">
+                <label for="intermediate">Средний</label>
+                
+                <input type="radio" id="advanced" name="level">
+                <label for="advanced">Продвинутый</label>
+                
+                <div class="tab-content beginner">
+                    <div class="lessons-grid">
+                        <div class="lesson-card">
+                            <div class="lesson-icon"><i class="fas fa-handshake"></i></div>
+                            <h3>Урок 1: Приветствия</h3>
+                            <p>Фразы для знакомства и приветствия</p>
+                            <a href="greetings.html" class="button">Изучить <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                        <div class="lesson-card">
+                            <div class="lesson-icon"><i class="fas fa-users"></i></div>
+                            <h3>Урок 2: Семья</h3>
+                            <p>Названия членов семьи и родственников</p>
+                            <a href="family.html" class="button">Изучить <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                        <div class="lesson-card">
+                            <div class="lesson-icon"><i class="fas fa-sort-numeric-up"></i></div>
+                            <h3>Урок 3: Числа</h3>
+                            <p>Цифры от 1 до 100</p>
+                            <a href="numbers.html" class="button">Изучить <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-content intermediate">
+                    <div class="lessons-grid">
+                        <div class="lesson-card">
+                            <div class="lesson-icon"><i class="fas fa-shopping-cart"></i></div>
+                            <h3>Урок 1: Покупки</h3>
+                            <p>Фразы для общения в магазинах</p>
+                            <a href="#" class="button">Изучить <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                        <div class="lesson-card">
+                            <div class="lesson-icon"><i class="fas fa-utensils"></i></div>
+                            <h3>Урок 2: Ресторан</h3>
+                            <p>Как заказать еду в ресторане</p>
+                            <a href="#" class="button">Изучить <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                        <div class="lesson-card">
+                            <div class="lesson-icon"><i class="fas fa-hotel"></i></div>
+                            <h3>Урок 3: Отель</h3>
+                            <p>Фразы для бронирования и проживания</p>
+                            <a href="#" class="button">Изучить <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="vocabulary">
+            <h2><i class="fas fa-book-open"></i> Словарь</h2>
+            <div class="search-box">
+                <input type="text" placeholder="Поиск слова...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="vocabulary-list">
+                <div class="word-card">
+                    <div class="word-header">
+                        <h3>Hello</h3>
+                        <button class="sound-btn"><i class="fas fa-volume-up"></i></button>
+                    </div>
+                    <p class="translation">Привет</p>
+                    <p class="transcription">/həˈləʊ/</p>
+                    <div class="word-example">
+                        <p><strong>Пример:</strong> Hello, how are you?</p>
+                        <p><em>Привет, как дела?</em></p>
+                    </div>
+                </div>
+                <div class="word-card">
+                    <div class="word-header">
+                        <h3>Goodbye</h3>
+                        <button class="sound-btn"><i class="fas fa-volume-up"></i></button>
+                    </div>
+                    <p class="translation">До свидания</p>
+                    <p class="transcription">/ˌɡʊdˈbaɪ/</p>
+                    <div class="word-example">
+                        <p><strong>Пример:</strong> Goodbye, see you tomorrow!</p>
+                        <p><em>До свидания, увидимся завтра!</em></p>
+                    </div>
+                </div>
+                <div class="word-card">
+                    <div class="word-header">
+                        <h3>Thank you</h3>
+                        <button class="sound-btn"><i class="fas fa-volume-up"></i></button>
+                    </div>
+                    <p class="translation">Спасибо</p>
+                    <p class="transcription">/ˈθæŋk juː/</p>
+                    <div class="word-example">
+                        <p><strong>Пример:</strong> Thank you for your help.</p>
+                        <p><em>Спасибо за вашу помощь.</em></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tips">
+            <h2><i class="fas fa-lightbulb"></i> Советы по изучению</h2>
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <div class="tip-icon"><i class="fas fa-headphones"></i></div>
+                    <h3>Слушайте</h3>
+                    <p>Регулярно слушайте английскую речь: подкасты, песни, аудиокниги.</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon"><i class="fas fa-book-reader"></i></div>
+                    <h3>Читайте</h3>
+                    <p>Читайте книги и статьи на английском, начиная с адаптированной литературы.</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon"><i class="fas fa-pen-fancy"></i></div>
+                    <h3>Пишите</h3>
+                    <p>Ведите дневник на английском, даже короткие заметки помогут.</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon"><i class="fas fa-comments"></i></div>
+                    <h3>Говорите</h3>
+                    <p>Практикуйте разговорную речь, даже если нет собеседника - говорите вслух.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Easy English</h3>
+                    <p>Простой и эффективный способ изучения английского языка</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Быстрые ссылки</h3>
+                    <ul>
+                        <li><a href="#home">Главная</a></li>
+                        <li><a href="#lessons">Уроки</a></li>
+                        <li><a href="#vocabulary">Словарь</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <p><i class="fas fa-envelope"></i> contact@easyenglish.com</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Easy English. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
